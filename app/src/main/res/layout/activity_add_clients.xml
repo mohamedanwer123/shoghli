@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cm.mywork.Activites.AddClients"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Your Client"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Client name"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/username"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:id="@+id/addclientactivity_name"
+            android:textColor="#23283a"
+
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Client job"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/work"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:textColor="#23283a"
+            android:id="@+id/addclientactivity_job"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Client Location"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/location"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:textColor="#23283a"
+            android:id="@+id/addclientactivity_location"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Client Phone"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/phon"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:textColor="#23283a"
+            android:id="@+id/addclientactivity_phone"
+            android:maxLength="11"
+            android:inputType="phone"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/singup_btn"
+            android:textColor="#fff"
+            android:text="Save Client"
+            android:id="@+id/addclientactivity_save"
+            android:onClick="Save"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

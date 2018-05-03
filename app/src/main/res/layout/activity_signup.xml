@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cm.mywork.Activites.Signup"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/signup_back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:text="Sign Up"
+        android:layout_gravity="center"
+        android:id="@+id/signup_title"/>
+
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et"
+        android:textColor="#fff"
+        android:hint="username"
+        android:textColorHint="#938e8e"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="20dp"
+        android:id="@+id/signup_name"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et"
+        android:textColor="#fff"
+        android:hint="password"
+        android:textColorHint="#938e8e"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/pass"
+        android:drawablePadding="20dp"
+        android:id="@+id/signup_pass"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et"
+        android:textColor="#fff"
+        android:hint="phone"
+        android:textColorHint="#938e8e"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="20dp"
+        android:id="@+id/signup_phone"
+        android:inputType="phone"
+        android:maxLength="11"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et"
+        android:textColor="#fff"
+        android:hint="job"
+        android:textColorHint="#938e8e"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/job"
+        android:drawablePadding="20dp"
+        android:id="@+id/signup_job"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:hint="company"
+        android:textColorHint="#938e8e"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/et"
+        android:drawableLeft="@drawable/company"
+        android:drawablePadding="20dp"
+        android:id="@+id/signup_company"
+        />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/help_btn"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:text="Sign Up"
+        android:id="@+id/signup_save"
+        android:onClick="Save"/>
+    
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:indeterminateTint="#fff"
+        android:id="@+id/signup_progress"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

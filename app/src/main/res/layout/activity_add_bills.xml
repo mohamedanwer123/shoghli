@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cm.mywork.Activites.AddBills"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Bills"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Product name"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:textColor="#23283a"
+            android:id="@+id/addBills_name"
+
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="amount"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:textColor="#23283a"
+            android:id="@+id/addBills_amount"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="public price"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:textColor="#23283a"
+            android:id="@+id/addBills_price"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="discount"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:textColor="#23283a"
+            android:id="@+id/addBills_discount"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/addBills_before"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:enabled="false"
+            android:hint="price before discount"
+            android:paddingLeft="20dp"
+            android:textColor="#23283a" />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="price after discount"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:textColor="#23283a"
+            android:enabled="false"
+            android:id="@+id/addBills_aftter"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/singup_btn"
+            android:textColor="#fff"
+            android:text="Save Bill"
+            android:id="@+id/addclientactivity_save"
+            android:onClick="Save"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

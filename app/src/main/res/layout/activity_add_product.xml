@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cm.mywork.Activites.AddProduct"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Product"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-40dp"
+
+        android:id="@+id/addproductactivity_img"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/addproductactivity_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="Product name"
+            android:paddingLeft="20dp"
+            android:textColor="#23283a"
+
+            />
+
+        <EditText
+            android:id="@+id/addproductactivity_price"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="Product Price"
+            android:paddingLeft="20dp"
+            android:textColor="#23283a"
+            android:inputType="numberDecimal"
+
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Product company"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:id="@+id/addproductactivity_company"
+            android:textColor="#23283a"
+
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Product Description"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:id="@+id/addproductactivity_des"
+            android:textColor="#23283a"
+
+            />
+
+           <Button
+               android:layout_marginTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="  Product Image  "
+               android:textColor="#fff"
+              android:layout_gravity="center"
+               android:background="@drawable/signin_btn"
+               android:onClick="selectImage"/>
+
+
+        <Button
+            android:id="@+id/addclientactivity_save"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/singup_btn"
+            android:onClick="Save"
+            android:text="Save Product"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

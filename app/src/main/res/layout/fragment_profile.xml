@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cm.mywork.Fragments.Profile"
+    android:orientation="vertical"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="410dp"
+       android:background="@color/colorPrimary"
+       android:orientation="vertical">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="120dp"
+           android:layout_height="120dp"
+           android:layout_marginTop="40dp"
+           android:layout_gravity="center"
+           android:src="@drawable/pro"
+           android:id="@+id/profileFragment_img"/>
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/add"
+           android:layout_gravity="center"
+           android:layout_marginLeft="40dp"
+           android:layout_marginTop="-20dp"
+           android:id="@+id/profileFragment_selectimg"
+           />
+
+       <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#fff"
+       android:textSize="30dp"
+       android:layout_gravity="center"
+       android:textStyle="italic"
+       android:text="Mohamed Anwer"
+       android:layout_marginTop="10dp"
+       android:id="@+id/profileFragment_name"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#fff"
+           android:textSize="20dp"
+           android:layout_gravity="center"
+           android:textStyle="italic"
+           android:text="Android Developer"
+           android:layout_marginTop="2dp"
+           android:id="@+id/profileFragment_job"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="40dp"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:background="@drawable/phone2"
+               android:layout_marginLeft="30dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="01200070321"
+               android:textColor="#6b6666"
+               android:textSize="20dp"
+               android:layout_marginLeft="20dp"
+               android:id="@+id/profileFragment_phone"
+               android:layout_marginTop="-2dp"
+              />
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:background="@drawable/company"
+               android:layout_marginLeft="30dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Index"
+               android:textColor="#6b6666"
+               android:textSize="20dp"
+               android:layout_marginLeft="20dp"
+               android:id="@+id/profileFragment_company"
+               android:layout_marginTop="-2dp"
+               />
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-25dp"
+        android:background="@drawable/singup_btn"
+        android:textColor="#fff"
+        android:text="Update Data"
+        android:id="@+id/profileFragment_update"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/signin_btn"
+        android:textColor="#fff"
+        android:text="LogOut"
+        android:id="@+id/profileFragment_logout"
+        />
+
+</LinearLayout>

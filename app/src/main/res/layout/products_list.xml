@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+
+   <android.support.v7.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardBackgroundColor="@color/colorPrimary"
+       app:cardCornerRadius="10dp"
+       app:cardElevation="50dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+          <LinearLayout
+              android:layout_width="130dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginTop="10dp"
+                  android:text="Slienica"
+                  android:textColor="#fff"
+                  android:textSize="17dp"
+                  android:textStyle="italic"
+                  android:padding="1dp"
+                  android:id="@+id/productList_name"
+                  />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:text="50 PE"
+                  android:textColor="#767779"
+                  android:textSize="16dp"
+                  android:textStyle="italic"
+                  android:padding="1dp"
+                  android:layout_marginTop="10dp"
+                  android:id="@+id/productList_price"/>
+
+              <TextView
+                  android:layout_marginTop="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:text="Multi Farm"
+                  android:textColor="#ffffff"
+                  android:textSize="17dp"
+                  android:textStyle="italic"
+                  android:padding="1dp"
+                  android:id="@+id/productList_company"
+                  android:layout_marginBottom="10dp"/>
+          </LinearLayout>
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/med"
+               android:layout_gravity="center"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginBottom="10dp"
+               android:id="@+id/productList_img"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:text="aaaaaaaaa11111111111111111111111aa"
+                   android:textColor="#cc295a"
+                   android:textSize="16dp"
+                   android:textStyle="italic"
+                   android:padding="1dp"
+                   android:layout_marginRight="30dp"
+                   android:id="@+id/productList_description"
+                   android:layout_gravity="center"/>
+
+
+       </LinearLayout>
+
+   </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

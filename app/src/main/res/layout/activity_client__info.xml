@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cm.mywork.Activites.Client_Info"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+   <android.support.v7.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardBackgroundColor="@color/colorPrimary"
+       android:layout_marginTop="5dp"
+       app:cardElevation="50dp"
+       app:cardCornerRadius="15dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#fff"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="20dp"
+              android:textStyle="italic"
+              android:text="Doctor"
+              android:textSize="18dp"
+              android:id="@+id/clientInfo_job"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#585555"
+               android:layout_marginTop="2dp"
+               android:layout_marginLeft="30dp"
+               android:textStyle="italic"
+               android:text="mohamed anwer"
+               android:textSize="16dp"
+               android:id="@+id/clientInfo_name"/>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp">
+
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:background="@drawable/phone2"
+                   android:layout_marginLeft="30dp"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="01200070321"
+                   android:textColor="#6b6666"
+                   android:textSize="17dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="-2dp"
+                   android:id="@+id/clientInfo_phone"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Call"
+                   android:textColor="#6ed62e"
+                   android:textSize="20dp"
+                   android:layout_marginLeft="130dp"
+                   android:layout_marginTop="-2dp"
+                   android:id="@+id/clientInfo_call"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="10dp">
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:background="@drawable/loc"
+                   android:layout_marginLeft="30dp"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ismailia"
+                   android:textColor="#6b6666"
+                   android:textSize="17dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="-2dp"
+                   android:id="@+id/clientInfo_location"
+                   />
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bills"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/clientInfo_lv"
+        android:scrollbars="none"
+        ></ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="-80dp"
+        android:src="@drawable/add"
+        app:backgroundTint="#4a4964"
+        android:id="@+id/clientInfo_add"
+      />
+
+</LinearLayout>
